@@ -9,6 +9,6 @@ public class HelloController {
 	
 	@RequestMapping(path = "/hello", method = RequestMethod.GET)
 	public String serviceA() {
-		return "Service A";
+		return "Service A-1";
 	}
 }
