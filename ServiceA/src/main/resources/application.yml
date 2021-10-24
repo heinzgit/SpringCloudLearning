@@ -1,1 +1,12 @@
+server:
+  port: 8001
+  
+spring:
+  application:
+    name: ServiceA
 
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
