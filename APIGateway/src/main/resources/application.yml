@@ -1,1 +1,23 @@
-
+server:
+  port: 6001
+  
+spring:
+  application:
+    name: api_gateway
+  cloud:
+    gateway:
+      routes:
+      - id: service_a
+        uri: lb://SERVICEA
+        predicates:
+        - Path=/helloA
+        
+      - id: service_B
+        uri: lb://SERVICEB
+        predicates:
+        - Path=/helloB
+        
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/

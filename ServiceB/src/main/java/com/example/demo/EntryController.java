@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 public class EntryController {
 	
-	@RequestMapping(method = RequestMethod.GET, path = "/hello")
+	@RequestMapping(method = RequestMethod.GET, path = "/helloB")
 	public String hello() {
 		return "Service B";
 	}
